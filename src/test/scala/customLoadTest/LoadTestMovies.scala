@@ -7,7 +7,7 @@ import io.gatling.http.Predef._
 import scala.concurrent.duration.DurationInt
 
 class LoadTestMovies extends Simulation{
-  val httpConf = http.baseUrl("http://localhost:8080/movies/")
+  val httpConf = http.baseUrl("http://192.168.0.108:8080/movies/")
     .header("Accept", "application/json")
 
 
